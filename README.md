@@ -16,7 +16,7 @@ Download or Clone this repo ans start editing HTML Files.
 
 ## Compiling SASS
 
-To compile SASS you might need a compiling tool. If you prefer GUI, Try prepos.io (Its free)
+To compile SASS you might need a compiling tool. If you prefer GUI, Try https://prepros.io/ (Its free)
 
 ## License
 
