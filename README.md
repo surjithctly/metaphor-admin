@@ -2,6 +2,12 @@
 
 Free Admin Dashboard HTML Template Created with Material CSS &amp; SASS
 
+## Live Demo
+
+https://metaphor-admin.vercel.app/
+
+## Screenshot
+
 ![metaphor-admin](https://user-images.githubusercontent.com/1884712/96971087-3fed5a80-1532-11eb-9580-53c6ed8717bd.jpg)
 
 ## Usage
