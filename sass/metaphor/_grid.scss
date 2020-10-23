@@ -1,0 +1,57 @@
+.container-fluid {
+  padding: 0 $gutter-width;
+  margin: 0 auto;
+}
+
+@media #{$medium-and-down} {
+.container-fluid {
+  padding: 0($gutter-width - 1);
+}
+}
+.container-fluid:before, .container-fluid:after {
+	display: table;
+	content: " ";	
+}
+
+.container-fluid:after {
+	clear: both;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  // Clear floating children
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .col {
+
+@media #{$xlarge-and-up} {
+
+      $i: 1;
+      @while $i <= $num-cols {
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
+        &.xl#{$i} {
+          width: $perc;
+          margin-left: 0;
+        }
+        $i: $i + 1;
+      }
+      $i: 1;
+      @while $i <= $num-cols {
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
+        &.offset-xl#{$i} {
+          margin-left: $perc;
+        }
+        $i: $i + 1;
+      }
+
+    }
+
+  }
+}

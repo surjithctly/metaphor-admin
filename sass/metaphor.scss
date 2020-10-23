@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/*
+
+CSS Name		: Metaphor
+Usage			: Custom styling for Metaphor Template
+Author			: Surjith S M
+Author URL		: http://themeforest.net/user/surjithctly
+
+*/
+
+// Table of Contents
+
+/*
+
+TABLE OF CONTENTS
+
+1. MATERIAL CSS
+1. COLORS
+2. MIXINS
+3. PREFIXER
+4. VARIABLES
+5. GLOBAL
+6. NAVIGATION
+7. SIDENAV
+
+*/
+
+/* Material CSS */
+
+// Import Material CSS
+
+// Mixins
+@import "components/prefixer";
+@import "components/mixins";
+@import "components/color";
+
+// Variables;
+@import "components/variables";
+//Modifier
+@import "metaphor/variables"; 
+
+// Reset
+@import "components/normalize";
+
+// components
+@import "components/global";
+// Modifier
+@import "metaphor/global";
+
+@import "components/icons-material-design";
+@import "components/grid";
+//Modifier
+@import "metaphor/grid"; 
+
+@import "components/navbar";
+// Modifier
+@import "metaphor/navbar";
+
+@import "components/roboto";
+@import "components/typography";
+@import "components/cards";
+@import "components/toast";
+@import "components/tabs";
+@import "components/tooltip";
+@import "components/buttons";
+// Modifier
+@import "metaphor/buttons";
+
+@import "components/dropdown";
+@import "components/waves";
+@import "components/modal";
+@import "components/collapsible";
+@import "components/materialbox";
+@import "components/form";
+@import "components/table_of_contents";
+@import "components/sideNav";
+@import "components/preloader";
+@import "components/slider";
+@import "components/date_picker/default.scss";
+@import "components/date_picker/default.date.scss";
+@import "components/date_picker/default.time.scss";
+
+/*
+  Material CSS Modifiers
+*/
+
+
+
+
+/*
+  Metaphor Template CSS
+*/
+
+// Mixins
+@import "metaphor/template-mixins";
+
+
+// Template 
+@import "metaphor/template-global";
+
+// Components
+@import "metaphor/template-navigation"; 
+@import "metaphor/template-sidenav";
+@import "metaphor/template-map";
+@import "metaphor/template-charts";
+
+
+
+
+

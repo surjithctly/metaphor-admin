@@ -1,0 +1,46 @@
+/* 
+ *
+ * Charts / Graph 
+ *
+ */
+
+/* Split Graph */
+
+
+
+.split-graph>div {
+	border-color: $divider-color;
+	border-style: solid;
+	border-width: 0;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+
+	&:nth-child(3n+3) {
+		border-right-width: 0;
+	}
+}
+
+.split-graph--item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.split-graph--item {
+	max-height: 210px;
+	min-height: 210px;
+	width: 33.33%;
+	overflow: hidden;
+	float: left;
+	padding: 1.5rem;
+	text-align: center;
+
+	@media #{$small-and-down} {
+		width: 100%;
+	}
+}
+
+.donutchart {
+	margin: 0 auto;
+
+}

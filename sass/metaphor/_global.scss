@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+// Z-levels
+
+.z-depth-0, .card-panel.z-depth-0{
+    @include box-shadow(none);
+}
+
+// Badges
+span.badge {
+  min-width: 3rem;
+  padding: 0 6px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: inherit;
+  color: color('grey', 'darken-1');
+  float: right;
+  @include box-sizing(border-box);
+
+  &.new {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: $badge-bg-color;
+    @include border-radius(2px);
+  }
+  &.new:after {
+    content: " new";
+  }
+  &.round {
+    font-weight: 300;
+    font-size: 0.8rem;
+	min-width:1.2rem;
+	min-height:1.2rem;
+	line-height: 1.2rem;
+    color: #fff;
+    background-color: $badge-bg-color;
+    @include border-radius(10px);
+  }
+  &.float {
+	position:absolute;
+	  top: 10px;
+      right: 4px;
+	  z-index:1;  
+	   @media #{$medium-and-up} {
+			top: 15px;
+			right: 10px;
+	   }
+	
+  }
+}
+
+
+/*********************
+  Media Query Classes
+**********************/
+
+.hide-on-large-and-down {
+  @media #{$large-and-down} {
+    display: none !important;
+  }
+}
+
+.hide-on-large-only {
+  @media #{$large-and-up} {
+    display: initial !important;
+  }
+}
+
+.hide-on-large-only {
+  @media only screen and (min-width: $medium-screen) and (max-width: $large-screen) {
+    display: none !important;
+  }
+}
+.hide-on-xlarge-only {
+  @media #{$xlarge-and-up} {
+    display: none !important;
+  }
+}
+.show-on-xlarge {
+  @media #{$xlarge-and-up} {
+    display: initial !important;
+  }
+}

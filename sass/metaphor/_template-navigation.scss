@@ -1,0 +1,117 @@
+/* Scss Document */
+
+/* Navigation */
+nav, nav ul, nav ul li {
+@include transition(all 2s ease);
+}
+
+nav ul li a {
+@include transition(all 2s ease);
+}
+
+.input-field.reveal  {
+@include transition(all 2s ease);
+& input {
+	width:0;
+	@include transition(all 2s ease);
+}
+& label {
+	@include transition(all 2s ease);
+}
+}
+
+.input-field.reveal input:focus {
+	width:100%;
+}	
+
+/* Collection on Dropdown*/
+.dropdown-content.collection li > span {
+display: inline;
+padding: 0;
+color: initial;
+}
+
+.dropdown-content.collection .collection-item.avatar p {
+font-size:1rem;
+color:color("grey", "base"); 
+}
+
+.dropdown-content.collection .collection-item.avatar {
+	height:auto;	
+}
+
+/*Search Bar*/
+
+.search-bar {
+	position:absolute;
+	top:-105%;
+	left:20px;
+	right:20px;
+	z-index:100;
+	height: 70px;
+	line-height: 64px;
+	@include transition(all 0.5s ease);
+	
+	@media #{$medium-and-up} {
+		left:50px;
+		right:50px;
+	}
+	
+}
+
+.search-bar.active {
+	top:20px;	
+	@media #{$medium-and-up} {
+		top:30px;	
+	}
+
+	
+}
+
+.search-close {
+	position:absolute;
+	right:10px;
+	top:0;	
+	opacity:0.7;
+	color: $text-color;
+	&:hover,&:focus {
+	opacity:1;		
+	}
+	@media #{$medium-and-up} {
+		right:20px;
+	}
+}
+
+.search-bar .nav-wrapper {
+	margin-right:60px;
+}
+
+.search-bar .input-field  {
+label i, label.active i {
+color: $text-color;
+}
+}
+
+
+.search-result {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index: 99;
+	background: $grey-color-light;
+	display: none;
+	padding: 100px 20px 0;
+	@media #{$medium-and-up} {
+		padding: 150px 50px 0;
+	}
+}
+
+#staggered-list li {
+  -ms-filter: "progid:DXImageTransform@mixin Microsoft@mixin Alpha(Opacity=${iefactor})";
+  filter: "alpha(opacity=(${iefactor}))";
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0; 
+}

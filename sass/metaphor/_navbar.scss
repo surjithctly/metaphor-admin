@@ -1,0 +1,56 @@
+nav {
+  background-color: $primary-color-dark;
+
+  .nav-wrapper {
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
+
+
+  // Collapse button
+  a.button-collapse {
+
+    i {
+      font-size: 1.7rem;
+    }
+  }
+
+
+  // Logo
+  .brand-logo {
+	position: static;
+    font-size: 1.7rem;
+    transform: initial;
+      
+	&:hover {
+	 opacity:0.8;	
+	}
+  }
+
+
+  // Navbar Links
+  ul {
+
+    a {
+	  @media #{$medium-and-down} {
+		  padding: 0px 8px;
+	  }
+	  
+    }
+  }
+
+  // Navbar Search Form
+  .input-field {
+
+	  &.right label {
+		  top: 0;
+     	 right: 0;
+		 left: inherit; 
+	  }
+	 
+
+  }
+
+}
